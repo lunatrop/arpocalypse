@@ -1,0 +1,259 @@
+.app-body {
+    padding-top: 6vh;
+}
+
+.keyboard {
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1vh auto;
+    justify-content: center;
+    
+}
+
+.keyboard-outer {
+    width: 100%;
+}
+.keyboard > * {
+    padding: 0px 0px;
+    position: relative;
+
+}
+.messages {
+    font-size: small;
+    width: 75%;
+    text-align: center;
+    margin-top: 1vh;
+    color: darkslategray;
+    transition: all 0.5s;
+}
+
+.messages:hover {
+    color: white;
+}
+
+.key {
+    margin-top: 0px;
+}
+
+.key-inner:hover{
+    background: teal;
+    color: white;
+}
+
+.key-inner {
+    border: 0.25px solid white;
+    height: 100%;
+    width: 100%;
+    padding: 0px 0px;
+    background: black;
+    color: white;
+}
+
+.instruments {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rhs-tabs > button, .lhs-tabs > button {
+    width: 120px;
+    height: 4.6vh;
+    min-width: 50px;
+    min-height: 50px;
+    margin: auto 0;
+    font-size: x-small;
+    background: none;
+    color: white;
+}
+
+button:hover {
+    background: yellow;
+    color: black;
+}
+
+button {
+    transition: all 0.5s;
+}
+
+
+.lhs-tabs {
+    
+}
+
+#addSeq {
+    font-size: xx-large;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.rhs-tabs, .lhs-tabs {
+   
+}
+
+.white-key {
+    margin: 0%;
+    width: 4.6%;
+    height: 200px;
+    transition: all 0.5s;
+}
+
+.black-key {
+    margin: 0 -2.3%;
+    width: 4.6%;
+    height: 130px;
+    transition: all 0.5s;
+}
+
+
+@media (min-width: 1024px) {
+    /*.white-key, .black-key {
+	width: 2.3%
+    }
+    .black-key {
+	margin:  0 -1.15%;
+    }*/
+}
+
+@media (max-width: 800px) {
+    .white-key, .black-key {
+	width: 6.9%;
+  }
+    .black-key {
+	margin:  0 -3.45%;
+  }
+}
+
+@media (max-width: 480px) {
+    .keyboard {
+        width: 85%;
+    }
+    .white-key, .black-key {
+	width: 14.28%;
+        height: 33vh;
+        max-height: 175px;
+  }
+    .black-key {
+	margin:  0 -7.14%;
+        height: 16vh;
+        max-height: 95px;
+    }
+
+    .panel {
+        justify-content: center;
+    }
+    .messages {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .keyboard-outer {
+        display: flex;
+        align-items: flex-start;
+    }
+    .instruments {
+        flex: 1 1 50%
+    }
+    .engine {
+        flex: 1 1 50%
+    }
+    .engine > .ins-header {
+    }
+    .keyboard {
+        flex: 1 1 50%
+    }
+    .white-key, .black-key {
+	width: 6.9%;
+    }
+    .black-key {
+	margin:  0 -3.45%;
+    }
+    
+}
+
+.squares {
+    margin-left:  0;
+    margin-right:  0;
+    width: 50px;
+    height: 50px;
+}
+
+.logarithmic{
+    padding : 0px;
+    height: 15vh;
+    margin-left:  0px;
+    margin-right:  0px;
+}
+
+.octave {
+    width: 8.33%;
+}
+
+
+.press > .key-inner {
+    background-color: black;
+}
+
+.key.bass > .key-inner {
+    background: blue;
+    color: white;
+}
+
+.key.treble > .key-inner {
+    background: red;
+    color: white;
+}
+
+.role.bass > .key-inner {
+    background: blue;
+    color: white;
+}
+
+.role.treble > .key-inner {
+    background: red;
+    color: white;
+}
+
+.role > .key-inner {
+    text-transform: capitalize;
+}
+
+.bass , .treble {
+    display: inline;
+}
+
+.rhs-tabs > .bass {
+    background: blue;
+}
+
+.rhs-tabs > .treble {
+    background: red;
+}
+
+
+.bass.note-on > .key-inner {
+    background: yellow;
+    color: black
+}
+
+.treble.note-on > .key-inner {
+    background: yellow;
+    color: black
+}
+
+.note-on > .key-inner {
+    background: yellow;
+    color: black
+}
+
+.rail {
+    margin-top: 5px;
+    width: 100%;
+    height: 2.5vh;
+    border: 0.5px solid currentColor;
+}

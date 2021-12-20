@@ -1,0 +1,26 @@
+.key-text {
+    text-align: center;
+    font-size: 0.50em;
+    position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+    user-select: none;
+    overflow: hidden;
+    color: gray;
+}
+
+.black-key {
+    z-index: 1;
+}
+
+.white-key {
+    z-index : 0;
+}
+
+.qwert {
+    font-weight: bold;
+    font-size: 13pt;
+    color: yellow;
+}
+

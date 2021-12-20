@@ -1,0 +1,66 @@
+.control > .label {
+    padding: 10px;
+    font-size: x-small;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    text-align: center;
+    user-select: none;
+}
+.spinner {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    align-items: center;
+    user-select: none;
+}
+.spinner>*{
+    user-selectable: none
+}
+.spinner .icon {
+}
+
+.spinner .form {
+    flex-basis: 33%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.form input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: none;
+    color: currentColor;
+    border-radius: 30px
+}
+
+.arrows {
+    height: 50%;
+    width: 14px;
+    flex: 0 0 30px;
+    border: 0.5px solid currentColor;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-left {
+    border-right : none;
+    margin-right: -3px;
+}
+
+.arrow-right {
+    border-left: none;
+    margin-left: -3px;
+}
+
+.arrows:hover {
+    background: white;
+    color: black;
+}
+
+
+
+
