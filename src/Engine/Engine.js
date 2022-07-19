@@ -41,9 +41,9 @@ class Engine extends Component {
     this.createOsc = (id, hz) => {
       if(!isNaN(hz) ){
         !isNaN(id) ? this.setState({noteOn: [id, 'note-on']}) : ()=>{};
-	let g = 0.6/Math.pow(10, (+id-60)/36)
+	      let g = 0.6/Math.pow(10, (+id-60)/36)
         let gainNode = audioCtx.createGain();
-	gainNode.gain.value = g;
+	      gainNode.gain.value = g;
         gainNode.connect(this.gainNodeMaster)
         //gainNode.connect(audioCtx.destination, 0)
         let osc = audioCtx.createOscillator();
