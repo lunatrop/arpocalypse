@@ -3,8 +3,8 @@ import { Engine } from './Engine';
 import { Keyboard } from './Keyboard';
 
 class App extends Component {
+
   render() {
-    
     return (
       <div className="App">
         <Engine>
